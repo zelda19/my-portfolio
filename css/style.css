@@ -1,0 +1,7 @@
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--header-height) + 40px) 24px 60px;
+}
