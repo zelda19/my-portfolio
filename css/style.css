@@ -5,3 +5,17 @@
     justify-content: center;
     padding: calc(var(--header-height) + 40px) 24px 60px;
 }
+
+.hero__inner {
+    max-width: var(--max-width);
+    width: 100%;
+}
+
+.hero__badge {
+    display: inline-block;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    color: var(--color-blue);
+}
