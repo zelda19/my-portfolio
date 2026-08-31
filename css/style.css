@@ -31,7 +31,7 @@
     background-color: var(--accent-green);
     border-radius: 50%;
     display: inline-block;
-    box-shadow: 0 0 0 8px var(--accent-green); 
+    box-shadow: 0 0 8px 2px var(--accent-green);
 }
 
 .hero__title {
@@ -54,7 +54,7 @@
     margin-bottom: 40px;
 }
 
-/* Buttonssss */ 
+/* buttonssss */
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -64,12 +64,12 @@
     transition: all 0.2s ease;
 }
 
-.btn-primary {
+.btn--primary {
     background-color: var(--text-main);
-    color: var(--bg-prmary);
+    color: var(--bg-primary);
 }
 
-.btn-primary:hover {
+.btn--primary:hover {
     background-color: #ffffff;
     transform: translateY(-2px);
 }
@@ -82,12 +82,11 @@
 
 .btn--secondary:hover {
     background-color: var(--border-hover);
-    color: var(--bg-prmary);
+    color: var(--bg-primary);
     transform: translateY(-2px);
 }
 
-
-.hero__hightlights {
+.hero__highlights {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
