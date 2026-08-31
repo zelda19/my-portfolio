@@ -54,10 +54,51 @@
     margin-bottom: 40px;
 }
 
+/* Buttonssss */ 
 .btn {
     display: inline-block;
     padding: 12px 24px;
     border-radius: 8px;
     font-size: 0.95rem;
     font-weight: 500;
+    transition: all 0.2s ease;
 }
+
+.btn-primary {
+    background-color: var(--text-main);
+    color: var(--bg-prmary);
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn--secondary {
+    background-color: var(--bg-card);
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+}
+
+.btn--secondary:hover {
+    background-color: var(--border-hover);
+    color: var(--bg-prmary);
+    transform: translateY(-2px);
+}
+
+
+.hero__hightlights {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.pill {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: 6px 12px;
+    border-radius: 6px;
+}]
