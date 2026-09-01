@@ -109,7 +109,7 @@
     padding: 80px 24px;
 }
 
-.conrainer {
+.container {
     max-width: var(--max-width);
     margin: 0 auto;
 }
@@ -155,7 +155,7 @@
     color: var(--text-main);
 }
 
-.card__links {
+.card__link {
     font-family: var(--font-mono);
     font-size: 0.85rem;
     color: var(--accent-green);
