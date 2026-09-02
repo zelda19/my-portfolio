@@ -219,3 +219,14 @@
     color: var(--text-muted);
     line-height: 1.5;
 }
+
+.exp-cert__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.info-card {
+    background-color: var(--bg-card);
+    border: 1px
+}
