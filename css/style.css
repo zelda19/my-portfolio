@@ -126,6 +126,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 24px;
 }
+
 .card {
     background-color: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -134,12 +135,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;   
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;   
 }
 
 .card:hover {
     border-color: var(--border-hover);
     transform: translateY(-4px);
+    
 }
 
 .card__header {
@@ -185,7 +187,7 @@
 }
 
 
-.skills__grid {
+.skill__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 20px;
@@ -247,7 +249,7 @@
     color: var(--text-main);
 }
 
-.info-card__date, info-card__desc {
+.info-card__date, .info-card__desc {
     font-size: 0.9rem;
     color: var(--text-muted);
     margin-bottom: 4px;
