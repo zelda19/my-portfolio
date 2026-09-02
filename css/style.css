@@ -228,5 +228,71 @@
 
 .info-card {
     background-color: var(--bg-card);
-    border: 1px
+    border: 1px solid var(--border-color);
+    padding: 24px;
+}
+
+.info-card__type {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent-green);
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.info-card__title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.info-card__date, info-card__desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.info-card__list {
+    margin-top: 12px;
+    padding-left: 18px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.info-card__list li {
+    margin-bottom: 6px;
+    list-style-type: disc;
+}
+
+.info-card__divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 16px 0;
+}
+
+.footer {
+    padding: 80px 24px 40px;    
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+
+}
+
+.footer__desc {
+    color: var(--text-muted);
+    margin-bottom: 24px;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.footer__copy {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-muted);
 }
