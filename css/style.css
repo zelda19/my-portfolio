@@ -1,3 +1,34 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height);
+}
+
+/* Mobile Responsiveness for Terminal & Grids */
+@media (max-width: 850px) {
+    .hero__inner {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .hero__terminal {
+        order: 2; /* Keeps text bio on top, terminal on bottom for mobile */
+    }
+
+    .projects__grid,
+    .skill__grid,
+    .exp-cert__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Optimize Font Rendering */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+
 :root {
     --bg-primary: #0a0a0a;
     --bg-secondary: #111318;
