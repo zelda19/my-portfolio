@@ -146,13 +146,13 @@ ul { list-style: none; }
 .project:nth-child(even) { grid-template-columns: 1fr 1.2fr; }
 .project:nth-child(even) .project__preview { order: 2; }
 .project__preview {
-    aspect-ratio: 16 / 9; overflow: hidden;
+    position: relative; aspect-ratio: 16 / 9; overflow: hidden;
     border: 1px solid var(--line);
     background: radial-gradient(circle at 30% 20%, #151a10, #070807 70%);
     display: grid; place-items: center; text-align: center;
     font-family: var(--font-mono); color: var(--muted); font-size: 1.1rem;
 }
-.project__preview img { width: 100%; height: 100%; object-fit: cover; }
+.project__preview img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .project__title { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
 .project__desc { color: var(--muted); margin-bottom: 18px; max-width: 52ch; }
 .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 22px; }
