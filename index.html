@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cee Jay Maghanoy | IT Support & Sysadmin</title>
+    <meta name="description" content="BS IT graduate and CCNA certified. Linux, networking, and self-hosted Docker services. Open to entry-level IT support and sysadmin roles in Metro Manila.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cee Jay Maghanoy | IT Support & Sysadmin">
+    <meta property="og:description" content="CCNA certified BS IT graduate. Linux, networking, and self-hosted Docker services.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
@@ -38,10 +42,16 @@
                     <span class="pill">Linux / CLI</span>
                     <span class="pill">Docker & self-hosting</span>
                 </div>
+                <ul class="facts">
+                    <li>San Mateo Rizal, PH</li>
+                    <li>Open to shifting schedules</li>
+                    <li>Available immediately</li>
+                </ul>
+                <p class="hero__learning"><span>learning:</span> Python, cloud fundamentals</p>
             </div>
 
             <div class="hero__terminal frame" aria-label="System info from my laptop">
-                <div class="terminal__caption">[ame@sillyame] live setup</div>
+                <div class="terminal__caption">[ame@archlinux] live setup</div>
                 <div class="terminal__body" id="term">
 <pre class="ascii-art tl">
 ⠀⠀⠀⢀⡴⠲⣄⠀⠀⢀⡶⠲⡄⠀⣀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -53,16 +63,17 @@
 ⠀⠀⠈⠳⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠟⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠉⠿⠟⠛⠛⠻⠾⠛⠛⠛⠛⠻⠟⠛⠛⠻⠾⠃⠀⠀⠀⠀⠀⠀
 </pre>
-                    <div class="tl term-user">ame@sillyame</div>
-                    <div class="tl"><span class="term-label">OS:</span> Arch Linux </div>
-                    <div class="tl"><span class="term-label">Kernel:</span> 7.2.2-cachyos</div>
-                    <div class="tl"><span class="term-label">Shell:</span> fish </div>
-                    <div class="tl"><span class="term-label">Terminal:</span> kitty </div>
-                    <div class="tl"><span class="term-label">CPU:</span> AMD Ryzen 5 PRO 3500U</div>
-                    <div class="tl"><span class="term-label">Memory:</span> 1.5 GiB / 21.40 GiB</div>
-                    <div class="tl"><span class="term-label">Disk (/):</span> 29.35 GiB / 235.89 GiB (btrfs)</div>
-                    <div class="tl"><span class="term-label">Disk (/mnt):</span> 20.44 GiB / 219.00 GiB (ext4)</div>
-                    <div class="tl"><span class="term-user">ame@sillyame</span> <span class="term-path">~&gt;</span> <span class="cursor">|</span></div>
+                    <div class="tl term-user">ame@archlinux</div>
+                    <div class="tl"><span class="term-label">OS:</span> Arch Linux x86_64</div>
+                    <div class="tl"><span class="term-label">Kernel:</span> Linux 7.3.3-1-cachyos</div>
+                    <div class="tl"><span class="term-label">Packages:</span> 1456 (pacman), 10 (flatpak), 8 (appimage)</div>
+                    <div class="tl"><span class="term-label">Shell:</span> fish 4.9.3</div>
+                    <div class="tl"><span class="term-label">WM:</span> KWin (Wayland)</div>
+                    <div class="tl"><span class="term-label">Terminal:</span> kitty 0.50.0</div>
+                    <div class="tl"><span class="term-label">CPU:</span> AMD Ryzen 5 PRO 3500U (8) @ 3.70 GHz</div>
+                    <div class="tl"><span class="term-label">GPU:</span> AMD Radeon Vega 8 Graphics</div>
+                    <div class="tl"><span class="term-label">Memory:</span> 3.30 GiB / 21.40 GiB</div>
+                    <div class="tl"><span class="term-user">ame@archlinux</span> <span class="term-path">~&gt;</span> <span class="cursor">|</span></div>
                 </div>
             </div>
         </div>
@@ -116,11 +127,69 @@
         </div>
     </section>
 
+    <section class="section" id="homelab">
+        <div class="container">
+            <h2 class="section__title">How my homelab fits together</h2>
+            <figure class="diagram">
+                <div class="diagram__scroll">
+                <svg viewBox="0 0 760 270" role="img" aria-label="Network diagram: Internet to router to Arch Linux laptop, which runs Docker containers for Caddy, Vaultwarden, AdGuard Home and Jellyfin, with an external SSD for data.">
+                    <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="d-arrow"/></marker></defs>
+                    <rect x="480" y="10" width="260" height="250" class="d-group"/>
+                    <text x="496" y="30" class="d-label">Docker</text>
+                    <g class="d-node"><rect x="20" y="118" width="110" height="44"/><text x="75" y="145">Internet</text></g>
+                    <g class="d-node"><rect x="170" y="118" width="110" height="44"/><text x="225" y="145">Router</text></g>
+                    <g class="d-node d-hot"><rect x="320" y="118" width="130" height="44"/><text x="385" y="145">My laptop</text></g>
+                    <g class="d-node"><rect x="320" y="206" width="130" height="44"/><text x="385" y="233">External SSD</text></g>
+                    <g class="d-node"><rect x="500" y="42" width="220" height="40"/><text x="610" y="67">Caddy · reverse proxy</text></g>
+                    <g class="d-node"><rect x="500" y="98" width="220" height="40"/><text x="610" y="123">Vaultwarden</text></g>
+                    <g class="d-node"><rect x="500" y="154" width="220" height="40"/><text x="610" y="179">AdGuard Home · DNS</text></g>
+                    <g class="d-node"><rect x="500" y="210" width="220" height="40"/><text x="610" y="235">Jellyfin</text></g>
+                    <g class="d-line" marker-end="url(#arr)">
+                        <path d="M130 140H170" marker-end="url(#arr)"/>
+                        <path d="M280 140H320" marker-end="url(#arr)"/>
+                        <path d="M450 140H480" marker-end="url(#arr)"/>
+                        <path d="M385 162V206" marker-end="url(#arr)"/>
+                        <path d="M610 82V98" marker-end="url(#arr)"/>
+                    </g>
+                </svg>
+                </div>
+                <figcaption>Caddy fronts Vaultwarden with local HTTPS. AdGuard Home answers DNS for the LAN. Vaultwarden data lives on the external SSD.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="section" id="notes">
+        <div class="container">
+            <h2 class="section__title">Troubleshooting notes</h2>
+            <div class="notes">
+                <!-- EDIT: replace each note with a real problem you hit. Keep the symptom / checked / fix format. -->
+                <article class="note frame">
+                    <h3 class="note__title">Vaultwarden login page loads, but the vault won't open</h3>
+                    <p><b>Symptom</b> Web vault errors out over plain HTTP.</p>
+                    <p><b>Checked</b> Browser console, container logs, how I was reaching the service.</p>
+                    <p><b>Fix</b> Put Caddy in front with local HTTPS, since the web vault needs a secure context.</p>
+                </article>
+                <article class="note frame">
+                    <h3 class="note__title">LAN devices still using outside DNS</h3>
+                    <p><b>Symptom</b> Ads and trackers got through even with AdGuard Home running.</p>
+                    <p><b>Checked</b> What DNS server each device was actually handed.</p>
+                    <p><b>Fix</b> Point the router's DHCP DNS at the AdGuard Home host.</p>
+                </article>
+                <article class="note frame">
+                    <h3 class="note__title">Container data gone after recreate</h3>
+                    <p><b>Symptom</b> Settings and library reset after rebuilding a container.</p>
+                    <p><b>Checked</b> Compose volume mappings.</p>
+                    <p><b>Fix</b> Map config and data to persistent volumes on the SSD.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <section class="section" id="skills">
         <div class="container">
             <h2 class="section__title">Technical skills</h2>
             <dl class="skills">
-                <div class="skills__row"><dt>Operating systems</dt><dd>Linux (CachyOS, Arch, Fedora, Mint), Windows 11/10, Bash/Fish CLI administration</dd></div>
+                <div class="skills__row"><dt>Operating systems</dt><dd>Linux (CachyOS, Arch, Fedora, Mint), Windows 11/10</dd></div>
                 <div class="skills__row"><dt>Networking</dt><dd>CCNA certified, TCP/IP, static routing, DNS, firewall setup, network troubleshooting</dd></div>
                 <div class="skills__row"><dt>Containers & self-hosting</dt><dd>Docker, Docker Compose, Caddy reverse proxy, Vaultwarden, AdGuard Home, Jellyfin</dd></div>
                 <div class="skills__row"><dt>Development & tools</dt><dd>Python, Git, JavaScript, HTML/CSS, VirtualBox, VS Code</dd></div>
@@ -145,7 +214,6 @@
                     <span class="info-card__type">Certification & education</span>
                     <h3 class="info-card__title">Cisco Certified Network Associate (CCNA)</h3>
                     <p class="info-card__desc">Completed Introduction to Networks and Introduction to Cybersecurity</p>
-                    <div class="info-card__divider"></div>
                     <h3 class="info-card__title">BS in Information Technology</h3>
                     <p class="info-card__desc">ICCT Colleges (graduated December 2025)</p>
                 </div>

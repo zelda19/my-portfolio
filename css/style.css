@@ -187,6 +187,34 @@ ul { list-style: none; }
 .footer__links { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 48px; }
 .footer__copy { font-family: var(--font-mono); font-size: 0.78rem; color: var(--muted); }
 
+/* Hero extras */
+.facts { display: flex; gap: 8px 20px; flex-wrap: wrap; margin-top: 22px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); }
+.facts li::before { content: "▸ "; color: var(--accent); }
+.hero__learning { margin-top: 12px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); }
+.hero__learning span { color: var(--accent); }
+.link { color: var(--accent); border-bottom: 1px solid var(--line-strong); }
+.link:hover { border-color: var(--accent); }
+
+/* Homelab diagram */
+.diagram { background: var(--bg-card); border: 1px solid var(--line); padding: 20px; }
+.diagram__scroll { overflow-x: auto; }
+.diagram svg { display: block; width: 100%; min-width: 640px; height: auto; font-family: var(--font-mono); font-size: 13px; }
+.diagram figcaption { margin-top: 14px; font-size: 0.9rem; color: var(--muted); }
+.d-node rect { fill: var(--bg); stroke: var(--line-strong); }
+.d-hot rect { stroke: var(--accent); }
+.d-node text { fill: var(--text); text-anchor: middle; }
+.d-group { fill: none; stroke: var(--line-strong); stroke-dasharray: 5 4; }
+.d-label { fill: var(--muted); font-size: 12px; }
+.d-line path { fill: none; stroke: var(--accent); stroke-width: 1.5; }
+.d-arrow { fill: var(--accent); }
+
+/* Troubleshooting notes */
+.notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; }
+.note { background: var(--bg-card); border: 1px solid var(--line); padding: 24px; font-size: 0.92rem; color: var(--muted); }
+.note__title { font-size: 1.05rem; font-weight: 600; color: var(--text); margin-bottom: 12px; }
+.note p { margin-bottom: 8px; }
+.note b { font-family: var(--font-mono); font-size: 0.75rem; font-weight: 400; color: var(--accent); margin-right: 6px; }
+
 /* Mobile */
 @media (max-width: 850px) {
     .hero__inner, .project, .project:nth-child(even) { grid-template-columns: 1fr; }
