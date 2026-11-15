@@ -43,7 +43,7 @@
                     <span class="pill">Docker & self-hosting</span>
                 </div>
                 <ul class="facts">
-                    <li>San Mateo Rizal, PH</li>
+                    <li>Metro Manila, PH</li>
                     <li>Open to shifting schedules</li>
                     <li>Available immediately</li>
                 </ul>
@@ -138,7 +138,7 @@
                     <text x="496" y="30" class="d-label">Docker</text>
                     <g class="d-node"><rect x="20" y="118" width="110" height="44"/><text x="75" y="145">Internet</text></g>
                     <g class="d-node"><rect x="170" y="118" width="110" height="44"/><text x="225" y="145">Router</text></g>
-                    <g class="d-node d-hot"><rect x="320" y="118" width="130" height="44"/><text x="385" y="145">My laptop</text></g>
+                    <g class="d-node d-hot"><rect x="320" y="118" width="130" height="44"/><text x="385" y="145">Arch laptop</text></g>
                     <g class="d-node"><rect x="320" y="206" width="130" height="44"/><text x="385" y="233">External SSD</text></g>
                     <g class="d-node"><rect x="500" y="42" width="220" height="40"/><text x="610" y="67">Caddy · reverse proxy</text></g>
                     <g class="d-node"><rect x="500" y="98" width="220" height="40"/><text x="610" y="123">Vaultwarden</text></g>
@@ -158,37 +158,11 @@
         </div>
     </section>
 
-    <section class="section" id="notes">
-        <div class="container">
-            <h2 class="section__title">Troubleshooting notes</h2>
-            <div class="notes">
-                <article class="note frame">
-                    <h3 class="note__title">Vaultwarden login page loads, but the vault won't open</h3>
-                    <p><b>Problem</b> Web vault errors out over plain HTTP.</p>
-                    <p><b>Checked</b> Browser console, container logs, how I was reaching the service.</p>
-                    <p><b>Fix</b> Put Caddy in front with local HTTPS, since the web vault needs a secure context.</p>
-                </article>
-                <article class="note frame">
-                    <h3 class="note__title">LAN devices still using outside DNS</h3>
-                    <p><b>Problem</b> Ads and trackers got through even with AdGuard Home running.</p>
-                    <p><b>Checked</b> What DNS server each device was actually handed.</p>
-                    <p><b>Fix</b> Point the router's DHCP DNS at the AdGuard Home host.</p>
-                </article>
-                <article class="note frame">
-                    <h3 class="note__title">Container data gone after recreate</h3>
-                    <p><b>Problem</b> Settings and library reset after rebuilding a container.</p>
-                    <p><b>Checked</b> Compose volume mappings.</p>
-                    <p><b>Fix</b> Map config and data to persistent volumes on the SSD.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
     <section class="section" id="skills">
         <div class="container">
             <h2 class="section__title">Technical skills</h2>
             <dl class="skills">
-                <div class="skills__row"><dt>Operating systems</dt><dd>Linux (CachyOS, Arch, Fedora, Mint), Windows 11/10</dd></div>
+                <div class="skills__row"><dt>Operating systems</dt><dd>Linux (CachyOS, Arch, Fedora, Mint), Windows 11/10, Bash/Fish CLI administration</dd></div>
                 <div class="skills__row"><dt>Networking</dt><dd>CCNA certified, TCP/IP, static routing, DNS, firewall setup, network troubleshooting</dd></div>
                 <div class="skills__row"><dt>Containers & self-hosting</dt><dd>Docker, Docker Compose, Caddy reverse proxy, Vaultwarden, AdGuard Home, Jellyfin</dd></div>
                 <div class="skills__row"><dt>Development & tools</dt><dd>Python, Git, JavaScript, HTML/CSS, VirtualBox, VS Code</dd></div>
@@ -213,6 +187,9 @@
                     <span class="info-card__type">Certification & education</span>
                     <h3 class="info-card__title">Cisco Certified Network Associate (CCNA)</h3>
                     <p class="info-card__desc">Completed Introduction to Networks and Introduction to Cybersecurity</p>
+                    <!-- EDIT: put your real Credly profile URL here -->
+                    <p class="info-card__desc"><a href="https://www.credly.com/users/YOUR-CREDLY-NAME" target="_blank" rel="noopener" class="link">Verify on Credly</a></p>
+                    <div class="info-card__divider"></div>
                     <h3 class="info-card__title">BS in Information Technology</h3>
                     <p class="info-card__desc">ICCT Colleges (graduated December 2025)</p>
                 </div>
