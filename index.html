@@ -162,22 +162,21 @@
         <div class="container">
             <h2 class="section__title">Troubleshooting notes</h2>
             <div class="notes">
-                <!-- EDIT: replace each note with a real problem you hit. Keep the symptom / checked / fix format. -->
                 <article class="note frame">
                     <h3 class="note__title">Vaultwarden login page loads, but the vault won't open</h3>
-                    <p><b>Symptom</b> Web vault errors out over plain HTTP.</p>
+                    <p><b>Problem</b> Web vault errors out over plain HTTP.</p>
                     <p><b>Checked</b> Browser console, container logs, how I was reaching the service.</p>
                     <p><b>Fix</b> Put Caddy in front with local HTTPS, since the web vault needs a secure context.</p>
                 </article>
                 <article class="note frame">
                     <h3 class="note__title">LAN devices still using outside DNS</h3>
-                    <p><b>Symptom</b> Ads and trackers got through even with AdGuard Home running.</p>
+                    <p><b>Problem</b> Ads and trackers got through even with AdGuard Home running.</p>
                     <p><b>Checked</b> What DNS server each device was actually handed.</p>
                     <p><b>Fix</b> Point the router's DHCP DNS at the AdGuard Home host.</p>
                 </article>
                 <article class="note frame">
                     <h3 class="note__title">Container data gone after recreate</h3>
-                    <p><b>Symptom</b> Settings and library reset after rebuilding a container.</p>
+                    <p><b>Problem</b> Settings and library reset after rebuilding a container.</p>
                     <p><b>Checked</b> Compose volume mappings.</p>
                     <p><b>Fix</b> Map config and data to persistent volumes on the SSD.</p>
                 </article>
