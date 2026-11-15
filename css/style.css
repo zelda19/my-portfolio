@@ -186,6 +186,8 @@ ul { list-style: none; }
 .footer__desc { color: var(--muted); margin-bottom: 28px; }
 .footer__links { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 48px; }
 .footer__copy { font-family: var(--font-mono); font-size: 0.78rem; color: var(--muted); }
+.footer__quote { font-family: 'Press Start 2P', var(--font-mono); font-size: 0.7rem; line-height: 1.8; color: var(--accent); margin-bottom: 20px; }
+.footer__quote svg { height: 1.2em; width: auto; vertical-align: middle; margin-left: 8px; fill: currentColor; }
 
 /* Hero extras */
 .facts { display: flex; gap: 8px 20px; flex-wrap: wrap; margin-top: 22px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); }
